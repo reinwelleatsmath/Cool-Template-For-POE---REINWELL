@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex POE Timeline</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <div id="particles-js"></div>
+        <div class="loading-content">
+            <h1>Welcome to My POE Timeline</h1>
+            <p>Loading...</p>
+        </div>
+    </div>
+    
+    <div class="container" id="timelineContainer" style="display: none;">
+        <div id="particles-js-timeline"></div>
+        <h1>POE Timeline</h1>
+        <div class="timeline">
+            <div class="event">
+                <div class="event-icon"></div>
+                <div class="event-content">
+                    <div class="event-title">Goal Setting</div>
+                    <img src="https://via.placeholder.com/150" alt="POE Release" class="event-image">
+                    <div class="details">Isi sendiri</div>
+                </div>
+            </div>
+            <div class="event">
+                <div class="event-icon"></div>
+                <div class="event-content">
+                    <div class="event-title">Review 1</div>
+                    <img src="https://via.placeholder.com/150" alt="The Fall of Oriath" class="event-image">
+                    <div class="details">Isi sendiri</div>
+                </div>
+            </div>
+            <div class="event">
+                <div class="event-icon"></div>
+                <div class="event-content">
+                    <div class="event-title">Review 2</div>
+                    <img src="https://via.placeholder.com/150" alt="Betrayal League" class="event-image">
+                    <div class="details">Isi sendiri</div>
+                </div>
+            </div>
+            <div class="event">
+                <div class="event-icon"></div>
+                <div class="event-content">
+                    <div class="event-title">Review 3</div>
+                    <img src="https://via.placeholder.com/150" alt="Harvest League" class="event-image">
+                    <div class="details">Isi sendiri</div>
+                </div>
+            </div>
+            <div class="event">
+                <div class="event-icon"></div>
+                <div class="event-content">
+                    <div class="event-title">Evaluasi Keberhasilan</div>
+                    <img src="https://via.placeholder.com/150" alt="Scourge League" class="event-image">
+                    <div class="details">Isi sendiri</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script>
+        // Initialize particles for the loading screen
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 100 },
+                size: { value: 3 },
+                color: { value: "#007bff" },
+                move: { speed: 3 }
+            },
+            interactivity: {
+                events: {
+                    onhover: { enable: true, mode: "repulse" }
+                }
+            }
+        });
+
+        // Initialize particles for the main timeline screen
+        particlesJS("particles-js-timeline", {
+            particles: {
+                number: { value: 50 },
+                size: { value: 4 },
+                color: { value: "#007bff" },
+                move: { speed: 1 }
+            },
+            interactivity: {
+                events: {
+                    onhover: { enable: true, mode: "repulse" }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
